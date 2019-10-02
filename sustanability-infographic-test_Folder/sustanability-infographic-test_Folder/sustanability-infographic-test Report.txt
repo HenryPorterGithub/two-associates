@@ -1,0 +1,50 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: sustanability-infographic-test.ai
+Color Mode: RGB color
+Color Profile: sRGB IEC61966-2.1
+Ruler Units: pixels
+Artboard Dimensions: 360 px x 7460.7529 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+AkkuratProBold (OTF)
+Avenir Next LT Pro Light (OTF)
+Avenir Next LT Pro (OTF)
+Avenir Next LT Pro Medium (OTF)
+Avenir Next LT Pro Bold (OTF)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Volumes/Work/BLACKROCK/iSHARES COMMS/WEB/BK211217_01 - Investment Directions App/Design/Links/screencapture-ishares-uk-intermediaries-en-themes-european-equities-1513952052733.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 30359K, 1560 by 4982 pixels
+Dimensions: 1560 by 4982 points 
+Resolution: 72 by 72 pixels per inch

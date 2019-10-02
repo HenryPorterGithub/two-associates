@@ -1,0 +1,1026 @@
+/* fonts */
+
+@font-face {
+    font-family: AkkuratProBold;
+    src: url(AkkuratProBold.otf);
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Bold;
+    src: url(AvenirNextLTPro-Bold.otf);
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Light;
+    src: url(AvenirNextLTPro-Light.otf);
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Medium;
+    src: url(AvenirNextLTPro-Medium.otf);
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Regular;
+    src: url(AvenirNextLTPro-Regular.otf);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* section titles */
+
+#secTitle1,
+#secTitle2,
+#secTitle3,
+#secTitle4,
+#secTitle5,
+#secTitle6,
+#secTitle7,
+#secTitle8 {
+    background: #022544;
+    width: 100%;
+    display: table;
+    transition: 1s;
+    text-align: center;
+    color: #fff;
+    height: 10px;
+    position: relative;
+    top: 300px;
+    transform: rotatex(180deg);
+    transform-origin: top;
+
+}
+
+#secTitle1.show,
+#secTitle2.show,
+#secTitle3.show,
+#secTitle4.show,
+#secTitle5.show,
+#secTitle6.show,
+#secTitle7.show,
+#secTitle8.show {
+    height: 300px;
+}
+
+.secTitleWrapper {
+    height: 300px;
+    width: 100%;
+
+}
+
+.secTitleText {
+    color: #022544;
+    vertical-align: middle;
+    text-align: center;
+    font-family: AvenirNextLTPro-Bold;
+    font-size: 0.0001em;
+    letter-spacing: 0.05em;
+    display: table-cell;
+    transform: rotatex(180deg);
+    transform-origin: bottom;
+    position: relative;
+    top: -300px;
+}
+
+#secTitleText3 {}
+
+#secTitleText2.show,
+#secTitleText3.show,
+#secTitleText4.show,
+#secTitleText5.show,
+#secTitleText6.show,
+#secTitleText7.show,
+#secTitleText8.show {
+    color: white;
+    font-size: 1.8em;
+}
+
+#topGraphic {
+    transform: rotatex(180deg);
+    transform-origin: bottom;
+    position: relative;
+    top: -475px;
+}
+
+/* battery animation */
+
+#battery {
+    height: 130px;
+    width: 0px;
+    transition: 3s;
+    float: left;
+}
+
+#batteryWrapper {
+    height: 130px;
+    width: 300px;
+
+
+    position: absolute;
+    bottom: 275px;
+    left: -75px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*
+    margin: auto;
+    position: relative;
+    left: -38px;
+    top: -28px; */
+}
+
+#battery.show {
+    height: 130px;
+    width: 350px;
+}
+
+#batteryGraphic {
+    /* lock at top and centered */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#batterySource {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+/* grid animation */
+
+#gridLeft {}
+
+#gridRight {
+    position: relative;
+    left: 0;
+    transition: 1s;
+}
+
+#gridRight.move {
+    position: relative;
+    left: -325px;
+}
+
+/* satellite animation */
+
+#stars {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#satellite {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#satelliteText {
+    width: 500px;
+    position: relative;
+    top: 200px;
+}
+
+#satelliteSource {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* graph animation */
+
+#graph {}
+
+#graphDollar {
+    position: relative;
+    top: -650px;
+    left: 155px;
+    opacity: 0;
+}
+
+#graphDollar.show {
+    animation: 1s appear forwards;
+    animation-delay: 4s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#graphSource {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+#test {
+    position: relative;
+    top: -1000px;
+}
+
+#path {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+
+}
+
+#path.show {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: dash 5s linear alternate 1 forwards;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 10000;
+    }
+
+    to {
+        stroke-dashoffset: 5250;
+    }
+}
+
+/* second battery animation */
+
+#battery3 {}
+
+.batteryBar {
+    width: 60px;
+    height: 151px;
+    background-color: #D3D800;
+    display: inline-block;
+    position: relative;
+    top: -255px;
+    left: -54px;
+}
+
+#batteryBar1 {
+    position: relative;
+    opacity: 0;
+}
+
+#batteryBar1.show {
+    animation: charge 2s forwards;
+}
+
+#batteryBar2 {
+    position: relative;
+    opacity: 0;
+}
+
+#batteryBar2.show {
+    animation: charge 2s forwards;
+    animation-delay: 1s;
+}
+
+#batteryBar3 {
+    position: relative;
+    opacity: 0;
+}
+
+#batteryBar3.show {
+    animation: charge 2s forwards;
+    animation-delay: 2s;
+}
+
+#batteryBar4 {
+    position: relative;
+    opacity: 0;
+}
+
+#batteryBar4.show {
+    animation: charge 2s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes charge {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* dollar animation */
+
+.dollar {
+    width: 100px;
+    height: 50px;
+    background-image: url('dollar.png');
+}
+
+.dollarRow {
+    display: inline-block;
+}
+
+#dollarX1Y1,
+#dollarX1Y2,
+#dollarX1Y3,
+#dollarX1Y4,
+#dollarX1Y5,
+#dollarX1Y6,
+#dollarX1Y7,
+#dollarX2Y1,
+#dollarX2Y2,
+#dollarX2Y3,
+#dollarX2Y4,
+#dollarX2Y5,
+#dollarX2Y6,
+#dollarX2Y7,
+#dollarX3Y1,
+#dollarX3Y2,
+#dollarX3Y3,
+#dollarX3Y4,
+#dollarX3Y5,
+#dollarX3Y6,
+#dollarX3Y7,
+#dollarX4Y1,
+#dollarX4Y2,
+#dollarX4Y3,
+#dollarX4Y4,
+#dollarX4Y5,
+#dollarX4Y6,
+#dollarX4Y7 {
+    opacity: 0;
+}
+
+/* base row */
+
+
+/* row Y1 */
+
+#dollarX1Y1.show {
+    animation: charge 2s forwards;
+}
+
+#dollarX2Y1.show {
+    animation: charge 2s forwards;
+    animation-delay: 1s;
+}
+
+#dollarX3Y1.show {
+    animation: charge 2s forwards;
+    animation-delay: 2s;
+}
+
+#dollarX4Y1.show {
+    animation: charge 2s forwards;
+    animation-delay: 3s;
+}
+
+/* column X1 */
+
+#dollarX1Y2.show {
+    animation: charge 2s forwards;
+    animation-delay: .1s;
+}
+
+#dollarX1Y3.show {
+    animation: charge 2s forwards;
+    animation-delay: .2s;
+}
+
+#dollarX1Y4.show {
+    animation: charge 2s forwards;
+    animation-delay: .3s;
+}
+
+#dollarX1Y5.show {
+    animation: charge 2s forwards;
+    animation-delay: .4s;
+}
+
+#dollarX1Y6.show {
+    animation: charge 2s forwards;
+    animation-delay: .5s;
+}
+
+#dollarX1Y7.show {
+    animation: charge 2s forwards;
+    animation-delay: .6s;
+}
+
+
+/* column X2 */
+
+#dollarX2Y2.show {
+    animation: charge 2s forwards;
+    animation-delay: 1.1s;
+}
+
+#dollarX2Y3.show {
+    animation: charge 2s forwards;
+    animation-delay: 1.2s;
+}
+
+#dollarX2Y4.show {
+    animation: charge 2s forwards;
+    animation-delay: 1.3s;
+}
+
+#dollarX2Y5.show {
+    animation: charge 2s forwards;
+    animation-delay: 1.4s;
+}
+
+#dollarX2Y6.show {
+    animation: charge 2s forwards;
+    animation-delay: 1.5s;
+}
+
+#dollarX2Y7.show {
+    animation: charge 2s forwards;
+    animation-delay: 1.6s;
+}
+
+/* column X3 */
+
+#dollarX3Y2.show {
+    animation: charge 2s forwards;
+    animation-delay: 2.1s;
+}
+
+#dollarX3Y3.show {
+    animation: charge 2s forwards;
+    animation-delay: 2.2s;
+}
+
+#dollarX3Y4.show {
+    animation: charge 2s forwards;
+    animation-delay: 2.3s;
+}
+
+#dollarX3Y5.show {
+    animation: charge 2s forwards;
+    animation-delay: 2.4s;
+}
+
+#dollarX3Y6.show {
+    animation: charge 2s forwards;
+    animation-delay: 2.5s;
+}
+
+#dollarX3Y7.show {
+    animation: charge 2s forwards;
+    animation-delay: 2.6s;
+}
+
+/* column X4 */
+
+#dollarX4Y2.show {
+    animation: charge 2s forwards;
+    animation-delay: 3.1s;
+}
+
+#dollarX4Y3.show {
+    animation: charge 2s forwards;
+    animation-delay: 3.2s;
+}
+
+#dollarX4Y4.show {
+    animation: charge 2s forwards;
+    animation-delay: 3.3s;
+}
+
+#dollarX4Y5.show {
+    animation: charge 2s forwards;
+    animation-delay: 3.4s;
+}
+
+#dollarX4Y6.show {
+    animation: charge 2s forwards;
+    animation-delay: 3.5s;
+}
+
+#dollarX4Y7.show {
+    animation: charge 2s forwards;
+    animation-delay: 3.6s;
+}
+
+/* nation animation */
+
+#china {
+    height: 1px;
+    width: 1px;
+
+    position: relative;
+    top: -200px;
+}
+
+#china.show {
+    animation: growChina 3s forwards;
+}
+
+#america {
+    height: 1px;
+    width: 1px;
+}
+
+#america.show {
+    animation: growAmerica 3s forwards;
+}
+
+@keyframes growAmericaMobile {
+    from {
+        height: 1px;
+        width: 1px;
+    }
+
+    to {
+        height: 50px;
+        width: 70px;
+    }
+}
+
+@keyframes growAmerica {
+    from {
+        height: 1px;
+        width: 1px;
+    }
+
+    to {
+        height: 180px;
+        width: 220px;
+    }
+}
+
+@keyframes growChinaMobile {
+    from {
+        height: 1px;
+        width: 1px;
+    }
+
+    to {
+        height: 180px;
+        width: 200px;
+    }
+}
+
+
+@keyframes growChina {
+    from {
+        height: 1px;
+        width: 1px;
+    }
+
+    to {
+        height: 700px;
+        width: 900px;
+    }
+}
+
+#sourceNation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* turbine animation */
+
+#turbineBG {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+#turbine {
+    position: relative;
+    left: 21vw;
+    top: 5vh;
+}
+
+#turbineshadow {
+    position: relative;
+    left: 3vw;
+    top: 76vh;
+}
+
+#lowerText {
+    position: relative;
+    top: 600px;
+}
+
+/* content sections */
+
+.pBlueTitle {
+    color: #073485;
+    font-family: AvenirNextLTPro-Bold;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    padding-top: 200px;
+    margin-bottom: 50px;
+}
+
+.pBlueText {
+    color: #073485;
+    font-family: AvenirNextLTPro-Regular;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#text30vw {
+    width: 30vw;
+}
+
+.pWhiteTitle {
+    color: white;
+    font-family: AvenirNextLTPro-Bold;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    padding-top: 200px;
+    margin-bottom: 50px;
+}
+
+.pWhiteText {
+    color: white;
+    font-family: AvenirNextLTPro-Regular;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#source {
+    position: relative;
+    top: 300px;
+    width: 15vw;
+    font-size: 1.5em;
+}
+
+/* background colors */
+.secContent {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#sec2 {
+    background-color: #82BC00;
+    text-align: center;
+    height: 1000px;
+    /* needed for bottom:0 */
+    /*g*/
+}
+
+#sec3 {
+    background-color: #8DD3F0;
+    text-align: center;
+    /*lb*/
+}
+
+#sec4 {
+    background-color: #002F60;
+    height: 1200px;
+    /*db*/
+}
+
+#sec5 {
+    text-align: center;
+    height: 1100px;
+    margin-bottom: 50px;
+}
+
+#sec6 {
+    background-color: #8DD3F0;
+    text-align: center;
+    /*lb*/
+}
+
+#sec7 {
+    background-color: #82BC00;
+    text-align: center;
+    height: 1300px;
+    /*g*/
+}
+
+#sec8 {
+    /*background-color: #8DD3F0;*/
+    /*lb*/
+}
+
+/* bold spans */
+.bold {
+    font-family: AvenirNextLTPro-Bold;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .pBlueTitle,
+    .pWhiteTitle {
+        width: 90vw;
+        font-size: 1.1em;
+        padding-top: 50px;
+    }
+
+    .pBlueText,
+    .pWhiteText {
+        width: 90vw;
+        font-size: 0.9em;
+    }
+
+    #testMargin {
+        margin-bottom: 0;
+    }
+
+    #text30vw {
+        width: 90vw;
+    }
+
+    #topGraphic {
+        width: 100%;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #batteryGraphic {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #battery {
+        height: 50px;
+        width: 0px;
+        transition: 3s;
+        float: left;
+    }
+
+    #batteryWrapper {
+        height: 50px;
+        width: 100px;
+
+        position: absolute;
+        bottom: 100px;
+        left: -55px;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        /*
+    margin: auto;
+    position: relative;
+    left: -38px;
+    top: -28px; */
+    }
+
+    #turbineSource {
+        display: none;
+    }
+
+    #battery.show {
+        height: 50px;
+        width: 100px;
+    }
+
+    #gridLeft {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        left: -30px;
+    }
+
+    #gridRight {
+        width: 70px;
+        height: 300px;
+        position: relative;
+        left: 20px;
+        transition: 1s;
+    }
+
+    #gridRight.move {
+        position: relative;
+        left: -175px;
+    }
+
+    #sec3 {
+        height: default;
+    }
+
+    #gridSource {
+        margin-bottom: 0;
+    }
+
+    #stars {
+        width: 100%;
+    }
+
+    #satellite {
+        width: 100px;
+        height: 100px;
+        top: 11px;
+    }
+
+    #satelliteText {
+        width: 200px;
+        font-size: 0.8em;
+        top: 130px;
+        left: -10px;
+        margin-bottom: 10px;
+    }
+
+    .secTitleText {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #sec4 {
+        height: 500px;
+    }
+
+    #satelliteSource {
+        width: 60vw;
+    }
+
+    #graph {
+        width: 100%;
+    }
+
+    #test {
+        width: 45%;
+        height: 150px;
+        top: -300px;
+    }
+
+    #graphDollar {
+        width: 100px;
+        height: 100px;
+        top: -200px;
+        left: 65px;
+    }
+
+    #sec5 {
+        height: 450px;
+    }
+
+    #battery3 {
+        width: 100%;
+    }
+
+    .dollar {
+        width: 60px;
+        height: 30px;
+        background-size: cover;
+    }
+
+    .batteryBar {
+        width: 60px;
+        height: 130px;
+        top: -245px;
+        left: -50px;
+        position: relative;
+    }
+
+
+    #china.show {
+        animation: growChinaMobile 3s forwards;
+    }
+
+    #america.show {
+        animation: growAmericaMobile 3s forwards;
+    }
+
+    #china {
+        position: relative;
+        top: -40px;
+    }
+
+    #sec7 {
+        height: 550px;
+    }
+
+    #topGraphic {
+        top: -150px;
+
+    }
+
+    .secTitleText.show {
+        font-size: 1.1em;
+    }
+
+    #secTitleText2.show,
+    #secTitleText3.show,
+    #secTitleText4.show,
+    #secTitleText5.show,
+    #secTitleText6.show,
+    #secTitleText7.show,
+    #secTitleText8.show {
+        color: white;
+        font-size: 1.8em;
+    }
+
+    #sec2 {
+        height: 350px;
+    }
+
+    #batterySource {
+        width: 250px;
+    }
+
+    #battery.show {
+        height: 50px;
+        width: 150px;
+    }
+
+    #turbineBG {
+        width: 100%;
+        z-index: -2;
+    }
+
+    #turbine {
+        width: 20%;
+        height: 20%;
+        top: -80px;
+        left: 103px;
+        z-index: -1;
+    }
+
+    #turbineshadow {
+        width: 20%;
+        height: 20%;
+        top: 95px;
+        left: 45px;
+        z-index: -1;
+    }
+
+    #lowerText {
+        top: 0px;
+        background-color: #82BC00;
+        height: 700px;
+    }
+    
+    #sec8 {
+        padding-bottom: 0;
+    }
+    
+    #paddingTop {
+        padding-top: 0;
+    }
+    /*
+    #secTitle1.show,
+    #secTitle2.show,
+    #secTitle3.show,
+    #secTitle4.show,
+    #secTitle5.show,
+    #secTitle6.show,
+    #secTitle7.show,
+    #secTitle8.show {
+        height: 150px;
+    }*/
