@@ -141,7 +141,7 @@ p {
 }
 
 #batteryGraphic {
-    /* lock at top and centered */
+    /* float top */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -597,8 +597,8 @@ p {
     }
 
     to {
-        height: 300px;
-        width: 400px;
+        height: 250px;
+        width: 300px;
     }
 }
 
@@ -807,7 +807,7 @@ p {
     #topGraphic {
         width: 100%;
         position: absolute;
-        top: -240px;
+        top: -150px;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -824,38 +824,39 @@ p {
         margin-right: auto;
     }
 
+    #batteryWrapper {
+        height: 40px;
+        width: 100px;
+        position: absolute;
+        bottom: 82px;
+        left: -15px;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #battery {
-        height: 50px;
+        height: 40px;
         width: 0px;
         transition: 3s;
         float: left;
     }
 
-    #batteryWrapper {
-        height: 50px;
+    #battery.show {
+        height: 40px;
         width: 100px;
-        position: absolute;
-        bottom: 104px;
-        left: -55px;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
+    }
 
-        /*
-    margin: auto;
-    position: relative;
-    left: -38px;
-    top: -28px; */
+    #batterySource {
+        width: 140px;
+        bottom: -25px;
+        font-size: 0.7em;
     }
 
     #turbineSource {
         display: none;
     }
 
-    #battery.show {
-        height: 50px;
-        width: 100px;
-    }
 
     #gridLeft {
         width: 300px;
@@ -868,17 +869,18 @@ p {
         width: 70px;
         height: 300px;
         position: relative;
-        left: 20px;
+        left: 100px;
         transition: 1s;
+        top: -305px;
     }
 
     #gridRight.move {
         position: relative;
-        left: -175px;
+        left: 17px;
     }
 
     #sec3 {
-        height: default;
+        height: 600px;
     }
 
     #gridSource {}
@@ -890,14 +892,14 @@ p {
     #satellite {
         width: 100px;
         height: 100px;
-        top: 75px;
+        top: 55px;
     }
 
     #satelliteText {
         width: 200px;
         font-size: 0.8em;
-        top: 160px;
-        left: -10px;
+        top: 120px;
+        left: -5px;
         margin-bottom: 10px;
     }
 
@@ -922,14 +924,14 @@ p {
     #test {
         width: 45%;
         height: 150px;
-        top: -300px;
+        top: -276px
     }
 
     #graphDollar {
         width: 100px;
         height: 100px;
-        top: -200px;
-        left: 66px;
+        top: -170px;
+        left: 48px;
     }
 
     #sec5 {
@@ -947,10 +949,10 @@ p {
     }
 
     .batteryBar {
-        width: 40px;
-        height: 100px;
-        top: -179px;
-        left: -37px;
+        width: 30px;
+        height: 80px;
+top: -143px;
+left: -30px;
         position: relative;
     }
 
@@ -964,7 +966,7 @@ p {
 
     #china {
         position: relative;
-        top: -110px;
+        top: -80px;
     }
 
     #sec7 {
@@ -986,17 +988,14 @@ p {
         font-size: 1.5em;
     }
 
+    #secTitleText6 {
+        top: -250px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     #sec2 {
         height: 350px;
-    }
-
-    #batterySource {
-        width: 250px;
-    }
-
-    #battery.show {
-        height: 50px;
-        width: 150px;
     }
 
     #turbineBG {
@@ -1007,8 +1006,8 @@ p {
     #turbine {
         width: 20%;
         height: 20%;
-        top: -110px;
-        left: 105px;
+        top: -120px;
+        left: 84px;
         z-index: -1;
     }
 
@@ -1024,9 +1023,12 @@ p {
     #lowerText {
         top: 0px;
         background-color: #82BC00;
-        height: 1000px;
+        height: 1100px;
     }
 
+    #upperText {
+        font-size: 0.9em;
+    }
     #sec8 {
         padding-bottom: 0;
     }
@@ -1068,21 +1070,21 @@ p {
     }
 
     #secTitle6 {
-        top: 250px;
-    }
-
-    #secTitle6.show {
-        height: 250px;
-    }
-
-    #secTitle6Wrapper {
-        height: 250px;
+        top: 400px;
     }
 
     #secTitleText6 {
-        top: -250px;
-        padding-left: 50px;
-        padding-right: 50px;
+        top: -400px;
+    }
+
+
+    #secTitle6.show {
+        height: 400px;
+        top: 400px;
+    }
+
+    #secTitle6Wrapper {
+        height: 400px;
     }
 
     #secTitle2.show,
@@ -1105,5 +1107,4 @@ p {
         background-color: #002F60;
         width: 80%;
         padding-top: 30px;
-        padding-bottom: 30px;
     }

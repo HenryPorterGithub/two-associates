@@ -253,7 +253,7 @@ var ourScene = new ScrollMagic.Scene({
 var R = 800;
 
 if (document.documentElement.clientWidth < 768) {
-    var R = 300;
+    var R = 240;
 }
 
 TweenMax.to("#satellite", 5, {
