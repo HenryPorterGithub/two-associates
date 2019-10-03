@@ -51,7 +51,6 @@ p {
     top: 300px;
     transform: rotatex(180deg);
     transform-origin: top;
-
 }
 
 #secTitle1.show,
@@ -85,8 +84,6 @@ p {
     top: -300px;
 }
 
-#secTitleText3 {}
-
 #secTitleText2.show,
 #secTitleText3.show,
 #secTitleText4.show,
@@ -95,7 +92,12 @@ p {
 #secTitleText7.show,
 #secTitleText8.show {
     color: white;
-    font-size: 1.8em;
+    font-size: 2.5em;
+}
+
+#secTitleText6 {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #topGraphic {
@@ -155,7 +157,7 @@ p {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 350px;
 }
 
 /* grid animation */
@@ -171,6 +173,15 @@ p {
 #gridRight.move {
     position: relative;
     left: -325px;
+}
+
+#gridSource {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* satellite animation */
@@ -194,7 +205,7 @@ p {
 #satelliteText {
     width: 500px;
     position: relative;
-    top: 200px;
+    top: 350px;
 }
 
 #satelliteSource {
@@ -333,6 +344,10 @@ p {
 }
 
 /* dollar animation */
+
+#testMargin {
+    margin-bottom: 0;
+}
 
 .dollar {
     width: 100px;
@@ -558,8 +573,8 @@ p {
     }
 
     to {
-        height: 50px;
-        width: 70px;
+        height: 70px;
+        width: 100px;
     }
 }
 
@@ -582,8 +597,8 @@ p {
     }
 
     to {
-        height: 180px;
-        width: 200px;
+        height: 300px;
+        width: 400px;
     }
 }
 
@@ -625,13 +640,14 @@ p {
 #turbine {
     position: relative;
     left: 21vw;
-    top: 5vh;
+    top: 10vh;
 }
 
 #turbineshadow {
     position: relative;
     left: 3vw;
     top: 76vh;
+    display: none;
 }
 
 #lowerText {
@@ -649,7 +665,6 @@ p {
     text-align: center;
     width: 40vw;
     margin: auto;
-    padding-top: 200px;
     margin-bottom: 50px;
 }
 
@@ -676,7 +691,6 @@ p {
     text-align: center;
     width: 40vw;
     margin: auto;
-    padding-top: 200px;
     margin-bottom: 50px;
 }
 
@@ -701,13 +715,14 @@ p {
 /* background colors */
 .secContent {
     padding-bottom: 50px;
+    padding-top: 100px;
     position: relative;
 }
 
 #sec2 {
     background-color: #82BC00;
     text-align: center;
-    height: 1000px;
+    height: 700px;
     /* needed for bottom:0 */
     /*g*/
 }
@@ -726,7 +741,7 @@ p {
 
 #sec5 {
     text-align: center;
-    height: 1100px;
+    height: 900px;
     margin-bottom: 50px;
 }
 
@@ -739,7 +754,7 @@ p {
 #sec7 {
     background-color: #82BC00;
     text-align: center;
-    height: 1300px;
+    height: 1100px;
     /*g*/
 }
 
@@ -749,27 +764,40 @@ p {
 }
 
 /* bold spans */
+
 .bold {
     font-family: AvenirNextLTPro-Bold;
 }
 
-@media only screen and (max-width: 768px) {
+#blueBackground {
+    background-color: #002F60;
+    width: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#turbineText {
+    width: 60vw;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 576px) {
+
+    .secContent {
+        padding-top: 50px;
+    }
 
     .pBlueTitle,
     .pWhiteTitle {
         width: 90vw;
-        font-size: 1.1em;
-        padding-top: 50px;
+        font-size: 1.5em;
     }
 
     .pBlueText,
     .pWhiteText {
         width: 90vw;
         font-size: 0.9em;
-    }
-
-    #testMargin {
-        margin-bottom: 0;
     }
 
     #text30vw {
@@ -779,7 +807,7 @@ p {
     #topGraphic {
         width: 100%;
         position: absolute;
-        top: -60px;
+        top: -240px;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -806,9 +834,8 @@ p {
     #batteryWrapper {
         height: 50px;
         width: 100px;
-
         position: absolute;
-        bottom: 100px;
+        bottom: 104px;
         left: -55px;
         right: 0;
         margin-left: auto;
@@ -854,9 +881,7 @@ p {
         height: default;
     }
 
-    #gridSource {
-        margin-bottom: 0;
-    }
+    #gridSource {}
 
     #stars {
         width: 100%;
@@ -865,13 +890,13 @@ p {
     #satellite {
         width: 100px;
         height: 100px;
-        top: 11px;
+        top: 75px;
     }
 
     #satelliteText {
         width: 200px;
         font-size: 0.8em;
-        top: 130px;
+        top: 160px;
         left: -10px;
         margin-bottom: 10px;
     }
@@ -879,6 +904,7 @@ p {
     .secTitleText {
         padding-left: 50px;
         padding-right: 50px;
+        top: -150px;
     }
 
     #sec4 {
@@ -903,7 +929,7 @@ p {
         width: 100px;
         height: 100px;
         top: -200px;
-        left: 65px;
+        left: 66px;
     }
 
     #sec5 {
@@ -911,7 +937,7 @@ p {
     }
 
     #battery3 {
-        width: 100%;
+        width: 70%;
     }
 
     .dollar {
@@ -921,13 +947,12 @@ p {
     }
 
     .batteryBar {
-        width: 60px;
-        height: 130px;
-        top: -245px;
-        left: -50px;
+        width: 40px;
+        height: 100px;
+        top: -179px;
+        left: -37px;
         position: relative;
     }
-
 
     #china.show {
         animation: growChinaMobile 3s forwards;
@@ -939,20 +964,15 @@ p {
 
     #china {
         position: relative;
-        top: -40px;
+        top: -110px;
     }
 
     #sec7 {
         height: 550px;
     }
 
-    #topGraphic {
-        top: -150px;
-
-    }
-
     .secTitleText.show {
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     #secTitleText2.show,
@@ -963,7 +983,7 @@ p {
     #secTitleText7.show,
     #secTitleText8.show {
         color: white;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     #sec2 {
@@ -987,8 +1007,8 @@ p {
     #turbine {
         width: 20%;
         height: 20%;
-        top: -80px;
-        left: 103px;
+        top: -110px;
+        left: 105px;
         z-index: -1;
     }
 
@@ -998,29 +1018,92 @@ p {
         top: 95px;
         left: 45px;
         z-index: -1;
+        display: none;
     }
 
     #lowerText {
         top: 0px;
         background-color: #82BC00;
-        height: 700px;
+        height: 1000px;
     }
-    
+
     #sec8 {
         padding-bottom: 0;
     }
-    
+
     #paddingTop {
         padding-top: 0;
     }
-    /*
-    #secTitle1.show,
+
+    .secTitleWrapper {
+        height: 150px;
+    }
+
+    #secTitle1 {
+        height: 200px;
+    }
+
+    #secTitle1.show {
+        top: 200px;
+    }
+
+    #topWrapper {
+        height: 200px;
+    }
+
+    #secTitle5 {
+        top: 250px;
+    }
+
+    #secTitle5.show {
+        height: 250px;
+    }
+
+    #secTitle5Wrapper {
+        height: 250px;
+    }
+
+    #secTitleText5 {
+        top: -250px;
+    }
+
+    #secTitle6 {
+        top: 250px;
+    }
+
+    #secTitle6.show {
+        height: 250px;
+    }
+
+    #secTitle6Wrapper {
+        height: 250px;
+    }
+
+    #secTitleText6 {
+        top: -250px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     #secTitle2.show,
     #secTitle3.show,
     #secTitle4.show,
-    #secTitle5.show,
-    #secTitle6.show,
     #secTitle7.show,
     #secTitle8.show {
         height: 150px;
-    }*/
+    }
+
+    #secTitle2,
+    #secTitle3,
+    #secTitle4,
+    #secTitle7,
+    #secTitle8 {
+        top: 150px;
+    }
+
+    #blueBackground {
+        background-color: #002F60;
+        width: 80%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
